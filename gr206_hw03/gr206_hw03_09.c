@@ -2,10 +2,16 @@
 
 int main(void)
 {
-int num;
-printf("enter an intager\n");
-scanf("%d", &num);
-num = ((num >> 1) & 1) + ((num >> 3) & 1) + ((num >> 5) & 1) + ((num >> 7) & 1);
-printf("sum of bits at pos 2, 4, 6, 8: %d\n", num);
+    unsigned int x;
+    int count = 0;
+    printf("Enter a positive integer: ");
+    scanf("%u", &x);
+
+    for (int i = 0; i < 32; i++) {
+        count += (x >> i) & 1;
+    }
+
+    printf("Number of bits equal to 1: %d\n", count);
+
     return 0;
 }

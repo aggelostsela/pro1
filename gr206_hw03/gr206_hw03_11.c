@@ -2,70 +2,19 @@
 
 int main(void)
 {
-    int month, day, feb, dim;
-
-    printf("give month (1-12): ");
-    scanf("%d", &month);
-    printf("give day: ");
-    scanf("%d", &day);
-
-    feb = 28;
-    if (month == 1 || month == 2) {
-        printf("how many days in februrary (28 or 29)? ");
-        scanf("%d", &feb);
+    double grade;
+    printf("enter grade (0-20): ");
+    scanf("%lf", &grade);
+    if (grade > 18) {
+        printf("Excellent\n");
+    } else if (grade > 16) {
+        printf("Very Good\n");
+    } else if (grade > 13) {
+        printf("Good\n");
+    } else if (grade >= 10) {
+        printf("Dangerous Zone\n");
+    } else {
+        printf("Need Help\n");
     }
-
-    day += 50;
-
-    switch (month) {
-        case 2:
-            dim = feb;
-            break;
-        case 4: 
-            dim = 30;
-            break;
-        case 6: 
-            dim = 30;
-            break;
-        case 9: 
-            dim = 30;
-            break;
-        case 11:
-            dim = 30;
-            break;
-        default:
-            dim = 31;
-    }
-    if (day > dim) {
-        day -= dim;
-        month = month % 12 + 1;
-
-        switch (month) {
-            case 2:
-                dim = feb;
-                break;
-            case 4:
-                dim = 30;
-                break;
-            case 6:
-                dim = 30;
-                break;
-            case 9:
-                dim = 30;
-                break;
-            case 11:
-                dim = 30;
-                break;
-            default:
-                dim = 31;
-        }
-        if (day > dim) {
-            day -= dim;
-            month = month % 12 + 1;
-        }
-    }
-
-    printf("%d/%d\n", month, day);
-
     return 0;
 }
