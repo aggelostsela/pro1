@@ -10,10 +10,10 @@ int main() {
     for (int i = 2; i <= 10; i++) {
         printf("Give number %d: ", i);
         scanf("%d", &num);
-        if (num - pre == 1 || prev - num == 1) {
+        if (num - pre == 1 || pre - num == 1) {
             count++;
         }
-        prev = num;
+        pre = num;
     }
 
     printf("Consecutive pairs: %d\n", count);
