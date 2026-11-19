@@ -27,7 +27,7 @@ int main(void)
                 }
         if (unique)
         {
-            printf("olumn %d: ", j + 1);
+            printf("column %d: ", j + 1);
             for (i = 0; i < row; i++)
                 printf("%d ", a[i][j]);
             printf("\n");
