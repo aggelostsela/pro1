@@ -11,7 +11,7 @@ int main(void)
     for (i = 0; i < row; i++)
         for (j = 0; j < colm; j++)
         {
-            printf("enter element [%d][%d]: ", i, j);
+            printf("enter number [%d][%d]: ", i, j);
             scanf("%d", &a[i][j]);
         }
 
