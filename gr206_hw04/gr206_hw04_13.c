@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+#define N 10
 int main(void)
 {
-    int g[10],a,b,count = 0;
-    for(int i = 0 ; i < 10 ; i++){
+    int g[N],a,b,count = 0;
+    for(int i = 0 ; i < N ; i++){
         printf("Give me students grade : ");
         scanf("%d",&g[i]);
     }
@@ -12,7 +13,8 @@ int main(void)
         scanf("%d-%d",&a,&b);
     }while (b < a);
     
-    for(int i = 0 ; i < 10 ; i ++){
+
+    for(int i = 0 ; i < N ; i ++){
         if(g[i]>=a && g[i]<=b){
             count ++;
         }

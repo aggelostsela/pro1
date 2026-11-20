@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 10
+#define N 100
 int main(void)
 {
     int count=0;

@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+#define N 100
 int main(void)
 {
     double n,max1,max2;
     printf("give a number : ");
     scanf("%lf",&n);
     max1=n;
-    for(int i =1;i<15 ;i++){
+    for(int i =1;i<N ;i++){
         printf("give a number : ");
         scanf("%lf",&n);
         if(n > max1){

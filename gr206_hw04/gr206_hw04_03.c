@@ -9,11 +9,11 @@ int main(void)
     do{
     printf("Give a number smaller than the prev : ");
     scanf("%d",&b);
-    }while(a < b);
+    }while(a <= b);
     do{
     printf("Again smaller than the prev: ");
     scanf("%d",&c);
-    }while(b < c);
+    }while(b <= c);
 
     return 0;
 }
