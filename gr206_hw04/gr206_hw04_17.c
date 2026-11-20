@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define N 5
+#define N 5000
 int main(void)
 {
     int sym=1;

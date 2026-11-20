@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 5
+#define N 1821
 int main(void)
 {
     int n[N],d =0,seen;
