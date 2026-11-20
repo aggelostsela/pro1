@@ -10,7 +10,7 @@ int main(){
     printf("Give cup amount and price\n");
     scanf("%d %lf",&ac,&pc);
     printf("Give amount given : \n");
-    scanf("%f",&g);
+    scanf("%lf",&g);
     totalp = ap*pp + ac*pc - g ;
     printf("Change is %.2f",totalp);
 
