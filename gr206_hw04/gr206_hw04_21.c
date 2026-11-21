@@ -4,7 +4,7 @@ int main(void)
 {
     int n[N],d =0,seen;
     for(int i = 0 ; i < N ; i ++){
-        printf("Give me a number : ");
+        printf("Give me a number for %d row : ",i+1);
         scanf("%d",&n[i]);
     }
     for(int i=0 ; i < N;i++){

@@ -6,7 +6,7 @@ int main(void)
     int sym=1;
     double n[N];
     for(int i=0;i<N;i++){
-        printf("Give a decimal number : ");
+        printf("Give a decimal number for %d row : ",i +1);
         scanf("%lf",&n[i]);
     }
     for(int i=0;i<N/2;i++){

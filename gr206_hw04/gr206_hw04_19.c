@@ -14,7 +14,7 @@ int main(void)
     mo+=n[N-1];
     
     for(int i = 0; i<N-1;i++){
-        printf("Give me a number : ");
+        printf("Give me a number for %d row : ",i+1);
         scanf("%d",&n[i]);
         mo+=n[i];
     }
