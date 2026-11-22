@@ -9,7 +9,7 @@ int main(void)
 
     for(int i =0;i<N;i++){
         for(int j =0;j < N;j++){
-            printf("Give me a number for %d row and %d column : ",i+1,j+1);
+            printf("Gime me a number for %d row and %d column : ",i+1,j+1);
             scanf("%d",&n[i][j]);
         }
     }

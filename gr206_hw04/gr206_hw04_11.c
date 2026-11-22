@@ -22,7 +22,7 @@ int main(void)
         }
         sum +=power;
         temp /=10; // moves right
-    }while(temp > 0);
+    }
     if(sum == n)
         printf("%d is an Armstrong number",n);
     else

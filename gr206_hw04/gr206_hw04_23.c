@@ -5,17 +5,17 @@ int main(void)
 {
     int n[N][N],upper=1,lower=1;
     for(int i = 0 ;i<N ; i ++){
-        for(int j = 0;j<N;j++){
+      for(int j = 0;j<N;j++){
             printf("Give me a number for %d row and %d column : ",i+1 , j+1);
             scanf("%d",&n[i][j]);
         }
     }
     for(int i = 0 ; i < N; i++){
         for(int j = 0 ; j < N ; j++){
-            if(i < j){
-                if(n[i][j]!=0)
+            if(i < j && n[i][j]!=0){
                     upper=0;
                     break;
+
                 }
             }
         }
@@ -23,14 +23,13 @@ int main(void)
 
     for(int i = 0 ; i < N; i++){
         for(int j = 0 ; j < N ; j++){
-            if (i > j){
-                if(n[i][j]!=0)
+            if (i > j && n[i][j]!=0){
                     lower=0;   
                     break;
+                }
                 
                 }
             }
-        }
 
     if(upper && lower)
         printf("The array is upper and lower triangylar");

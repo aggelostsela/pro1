@@ -5,23 +5,27 @@ int main(void)
     int count=0;
     double c,n[N],min;
     while(1){
+        if(count == N)
+            break;
+        
         do {
             printf("Give me a number > 5 : ");
             scanf("%lf",&c);
         }while(c <= 5.0 && c!= -1.0);
+        printf("%d\n",count);
         
-        if(c==-1.0 || count == N-1)
+        if(c==-1.0)
             break;
         if(count==0)
             min = c;
         else if (min > c)
             min = c;
-
         n[count]=c;
         count++;
+
     }    
     if(count)
-        printf("Min is : %.f \n",min);
+        printf("Min is : %.2lf \n",min);
     else
      printf("There is no min number");
 
