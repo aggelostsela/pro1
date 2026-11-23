@@ -7,11 +7,11 @@ int main(void)
     int count = 0;
     for(int i = 0 ; i < N ; i++){
         printf("Give me students grade : ");
-        scanf("%d",&g[i]);
+        scanf("%lf",&g[i]);
     }
     do{
         printf("give range grade a-b : ");
-        scanf("%d %d",&a,&b);
+        scanf("%lf %lf",&a,&b);
     }while (b < a);
     
 
