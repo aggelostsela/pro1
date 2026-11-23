@@ -10,7 +10,6 @@ int main(void)
         scanf("%lf",&n[i]);
     }
     for(int i=0;i<N/2;i++){
-        printf("%lf\n",n[N-i-1]);
         if(n[i]!= n[N-i-1]){
             sym=0;
             break;

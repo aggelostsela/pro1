@@ -3,7 +3,7 @@
 int main(void)
 {
     double mo;
-    int n[N],prev;
+    int n[N];
     int cp=0,cb=0;
 
     printf("Give me the last number : ");

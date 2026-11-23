@@ -3,14 +3,15 @@
 #define N 10
 int main(void)
 {
-    int g[N],a,b,count = 0;
+    double g[N],a,b;
+    int count = 0;
     for(int i = 0 ; i < N ; i++){
         printf("Give me students grade : ");
         scanf("%d",&g[i]);
     }
     do{
         printf("give range grade a-b : ");
-        scanf("%d-%d",&a,&b);
+        scanf("%d %d",&a,&b);
     }while (b < a);
     
 

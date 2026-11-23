@@ -11,9 +11,7 @@ int main(void)
         do {
             printf("Give me a number > 5 : ");
             scanf("%lf",&c);
-        }while(c <= 5.0 && c!= -1.0);
-        printf("%d\n",count);
-        
+        }while(c <= 5.0 && c!= -1.0);   
         if(c==-1.0)
             break;
         if(count==0)
@@ -28,10 +26,5 @@ int main(void)
         printf("Min is : %.2lf \n",min);
     else
      printf("There is no min number");
-
-    
-
-    
-
     return 0;
 }
